@@ -1,0 +1,357 @@
+{
+	"info": {
+		"_postman_id": "32e05921-4e68-441e-846f-91b174d6f704",
+		"name": "UserApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "Post User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userEmail\": \"steve@email.com\",\r\n    \"userPassword\": \"112233\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44355/api/Users/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44355",
+							"path": [
+								"api",
+								"Users",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Location",
+							"value": "https://localhost:44355/api/Users/54c1f9b4-df0d-4b63-a171-6ec56caca40d"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 31 Aug 2021 00:15:55 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "135"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"54c1f9b4-df0d-4b63-a171-6ec56caca40d\",\n    \"userEmail\": \"steve@email.com\",\n    \"userPassword\": \"112233\",\n    \"dateCreated\": \"0001-01-01T00:00:00\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userEmail\": \"steve@email.com\",\r\n    \"userPassword\": \"112233\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44355/api/Users/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44355",
+					"path": [
+						"api",
+						"Users",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Users",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": \"203ba608-8b2d-4611-aab0-da51e3a15ad5\",\r\n        \"userEmail\": \"frankstein@email.com\",\r\n        \"userPassword\": \"998877\",\r\n        \"dateCreated\": \"0001-01-01T00:00:00\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44355/api/Users/203ba608-8b2d-4611-aab0-da51e3a15ad5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44355",
+							"path": [
+								"api",
+								"Users",
+								"203ba608-8b2d-4611-aab0-da51e3a15ad5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 31 Aug 2021 00:16:37 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "413"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"54c1f9b4-df0d-4b63-a171-6ec56caca40d\",\n        \"userEmail\": \"steve@email.com\",\n        \"userPassword\": \"112233\",\n        \"dateCreated\": \"0001-01-01T00:00:00\"\n    },\n    {\n        \"id\": \"203ba608-8b2d-4611-aab0-da51e3a15ad5\",\n        \"userEmail\": \"frankstein@email.com\",\n        \"userPassword\": \"998877\",\n        \"dateCreated\": \"0001-01-01T00:00:00\"\n    },\n    {\n        \"id\": \"0e38150c-e076-4065-b5b7-5652f64f7cd1\",\n        \"userEmail\": \"Johndeer@email.com\",\n        \"userPassword\": \"654321\",\n        \"dateCreated\": \"0001-01-01T00:00:00\"\n    },\n    {\n        \"id\": \"263dbbdf-473c-40e4-befd-b001dbc337dd\",\n        \"userEmail\": \"glaubermarques@email.com\",\n        \"userPassword\": \"554477\",\n        \"dateCreated\": \"0001-01-01T00:00:00\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Put Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "Uptade User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"203ba608-8b2d-4611-aab0-da51e3a15ad5\",\r\n    \"userEmail\": \"frankstein@email.com\",\r\n    \"userPassword\": \"998877\",\r\n    \"dateCreated\": \"0001-01-01T00:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44355/api/Users/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44355",
+							"path": [
+								"api",
+								"Users",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 31 Aug 2021 00:20:18 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "417"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"54c1f9b4-df0d-4b63-a171-6ec56caca40d\",\n        \"userEmail\": \"steve@email.com\",\n        \"userPassword\": \"112233\",\n        \"dateCreated\": \"0001-01-01T00:00:00\"\n    },\n    {\n        \"id\": \"203ba608-8b2d-4611-aab0-da51e3a15ad5\",\n        \"userEmail\": \"frankstein@email.com\",\n        \"userPassword\": \"998877\",\n        \"dateCreated\": \"0001-01-01T00:00:00\"\n    },\n    {\n        \"id\": \"0e38150c-e076-4065-b5b7-5652f64f7cd1\",\n        \"userEmail\": \"Johndeer@email.com\",\n        \"userPassword\": \"654321\",\n        \"dateCreated\": \"0001-01-01T00:00:00\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Delete Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "Delete User",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": \"263dbbdf-473c-40e4-befd-b001dbc337dd\",\r\n        \"userEmail\": \"glaubermarques@email.com\",\r\n        \"userPassword\": \"554477\",\r\n        \"dateCreated\": \"0001-01-01T00:00:00\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44355/api/Users/263dbbdf-473c-40e4-befd-b001dbc337dd",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44355",
+							"path": [
+								"api",
+								"Users",
+								"263dbbdf-473c-40e4-befd-b001dbc337dd"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 31 Aug 2021 00:23:58 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "144"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"263dbbdf-473c-40e4-befd-b001dbc337dd\",\n    \"userEmail\": \"glaubermarques@email.com\",\n    \"userPassword\": \"554477\",\n    \"dateCreated\": \"0001-01-01T00:00:00\"\n}"
+				},
+				{
+					"name": "User Deleted",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": \"263dbbdf-473c-40e4-befd-b001dbc337dd\",\r\n        \"userEmail\": \"glaubermarques@email.com\",\r\n        \"userPassword\": \"554477\",\r\n        \"dateCreated\": \"0001-01-01T00:00:00\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44355/api/Users/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44355",
+							"path": [
+								"api",
+								"Users",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 31 Aug 2021 00:24:50 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "417"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"54c1f9b4-df0d-4b63-a171-6ec56caca40d\",\n        \"userEmail\": \"steve@email.com\",\n        \"userPassword\": \"112233\",\n        \"dateCreated\": \"0001-01-01T00:00:00\"\n    },\n    {\n        \"id\": \"203ba608-8b2d-4611-aab0-da51e3a15ad5\",\n        \"userEmail\": \"frankstein@email.com\",\n        \"userPassword\": \"998877\",\n        \"dateCreated\": \"0001-01-01T00:00:00\"\n    },\n    {\n        \"id\": \"0e38150c-e076-4065-b5b7-5652f64f7cd1\",\n        \"userEmail\": \"Johndeer@email.com\",\n        \"userPassword\": \"654321\",\n        \"dateCreated\": \"0001-01-01T00:00:00\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
